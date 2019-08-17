@@ -31,7 +31,7 @@ Com a Tela do monitoramento aberta você pode identificar a função "porta", qu
 
 #### Monitoramento da Partida
 
-![](imagens/inferface-web.png)
+![](imagens/inferface-web.PNG)
 
 O site do Placar Virtual permite ao usuário o monitoramento da partida ao vivo, com a função de controlar o fim da partida, com o botão "Finalizar" encontrada na parte central da página do Placar. 
 
@@ -52,7 +52,7 @@ O site do Placar Virtual permite ao usuário o monitoramento da partida ao vivo,
 
 ## Circuito
 
-![](imagens/circuito.png)
+![](imagens/circuito.PNG)
 
 Com o uso de sensores LDR com leds de alto brilho conseguimos fazer a leitura da passagem da bola no momento exato do gol, ligando o led do time que realizou o gol, tornando assim uma maneira prática e fácil para um grande problema que é a confirmação de gol em uma partida de "futebol", junto com a informação de gol, adicionamos um buzzer para acionar um som conforme cada gol for efetuado. E aprimorando o circuito colocamos um pushbutton para restaurarmos a partida no site como no software. 
 
