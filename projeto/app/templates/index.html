@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    </head>
+    
+    <body> 
+
+    <style>
+        body {
+            background: #419d78;
+        }
+    div.a{
+
+         text-align: center;
+    }
+    div.b {
+        background: #000;
+        color: #FFF;
+    }
+    div.c {
+        text-align:unset;
+    }
+
+    #CASA{
+        position:absolute;
+        left: 25vw;
+    }
+    #VISITANTE{
+        position: absolute;
+        right: 25vw; 
+    }
+    #ledA{
+        position: absolute;
+        left: 27vw;
+        top: 20vh;
+    }
+    #ledB{
+        position: absolute;
+        right: 29vw;
+        top: 20vh;
+    }
+    #Text{
+        color:black;
+        position: absolute;
+        right: 49vw;
+        top: 30vh;
+        
+    }
+
+    
+    </style>
+        <div class="a">
+        <div class="b">
+        <h1 id="Cabeçalho">PLACAR VIRTUAL</h1> 
+        <div class="card-body">
+        <h3 id ="CASA">CASA</h1>
+        <h3 id = "VISITANTE">VISITANTE</h1>
+            </div>
+        <h1 id="ledA">0</h1>
+        <h1 id="ledB">0</h1>       
+        <h1 id="Text">...</h1>
+         
+    
+            
+        <div class="c">
+            <button type="button" class="btn btn-danger" onClick="finalizarpartida()"> 
+            Finalizar
+            </button>
+        </div>
+            
+            
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>    
+        <script>
+        
+            var conexao = io.connect("http://teste2projeto.herokuapp.com")
+            conexao.on("atualiza", function(dados){
+                if ("CABEÇALHO" in dados){
+                document.getElementById("cabeçalho").innerHTML=dados["CABEÇALHO"]
+            }        
+        })
+
+        function finalizarpartida(){
+                conexao.emit("finalizarpartida")
+                document.getElementById("ledA").innerHTML = "-"
+                document.getElementById("ledB").innerHTML = "-"
+                document.getElementById("Text").innerHTML = "Fim"
+            } 
+
+        </script>
+    </body>
+</html>
