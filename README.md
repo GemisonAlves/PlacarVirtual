@@ -33,7 +33,7 @@ Com a Tela do monitoramento aberta você pode identificar a função "porta", qu
 
 ![](imagens/interfaceweb.PNG)
 
-O site do Placar Virtual permite ao usuário o monitoramento da partida ao vivo, com a função de controlar o fim da partida, com o botão "Finalizar" encontrada na parte central da página do Placar. 
+O [site](http://placarvirtual.herokuapp.com) do Placar Virtual permite ao usuário o monitoramento da partida ao vivo, com a função de controlar o fim da partida, com o botão "Finalizar" encontrada na parte central da página do Placar. 
 
 # Esclarecimentos Técnicos 
 
