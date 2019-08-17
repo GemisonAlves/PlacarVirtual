@@ -7,7 +7,7 @@ Projeto Final Programação Estruturada
 O projeto consiste na aplicação de uma automatização para "mesas de pebolim"  com uma tecnologia capaz de identificar o momento exato que a bola cruza o gol adversário.
 Tornando assim, uma maneira mais prática e usual para o dia-dia de pessoas que utilizam desse esporte uma brincadeira séria, em uma tecnologia integrada e de fácil utilização.
 
-![](imagens/placarvirtual.png)
+![](imagens/placarvirtual.jpg)
 
 # Manual do usuário
 
