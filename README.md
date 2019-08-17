@@ -7,6 +7,8 @@ Projeto Final Programação Estruturada
 O projeto consiste na aplicação de uma automatização para "mesas de pebolim"  com uma tecnologia capaz de identificar o momento exato que a bola cruza o gol adversário.
 Tornando assim, uma maneira mais prática e usual para o dia-dia de pessoas que utilizam desse esporte uma brincadeira séria, em uma tecnologia integrada e de fácil utilização.
 
+![](imagens/placarvirtual.png)
+
 # Manual do usuário
 
 ### Como funciona o Placar Virtual?
@@ -21,11 +23,15 @@ Se desejas utilizar o software do Placar Virtual e usa uma distribuição Window
 
 #### Monitoramento da Partida
 
+![](imagens/interface-software.png)
+
 Com a Tela do monitoramento aberta você pode identificar a função "porta", que é a administração das entradas usb do seu computador, onde você deverá conectar o cabo da sua esp8266. Logo após selecionada a porta, em seguida é preciso a sua velocidade, 115200 padrão da placa. O usuário poderá analisar o status do Placar Virtual, se está conectado ou desconectado, conforme sua conexão. Com a conexão feita, você poderá acompanhar a partida do "pebolim" conforme os gols forem sendo efetuados, e com a função de encerar a partida, pelo botão "FINALIZAR".
 
 # Utilização do site do Placar Virtual
 
 #### Monitoramento da Partida
+
+![](imagens/inferface-web.png)
 
 O site do Placar Virtual permite ao usuário o monitoramento da partida ao vivo, com a função de controlar o fim da partida, com o botão "Finalizar" encontrada na parte central da página do Placar. 
 
@@ -45,6 +51,8 @@ O site do Placar Virtual permite ao usuário o monitoramento da partida ao vivo,
 * MESA DE "PEBOLIM"
 
 ## Circuito
+
+![](imagens/circuito.png)
 
 Com o uso de sensores LDR com leds de alto brilho conseguimos fazer a leitura da passagem da bola no momento exato do gol, ligando o led do time que realizou o gol, tornando assim uma maneira prática e fácil para um grande problema que é a confirmação de gol em uma partida de "futebol", junto com a informação de gol, adicionamos um buzzer para acionar um som conforme cada gol for efetuado. E aprimorando o circuito colocamos um pushbutton para restaurarmos a partida no site como no software. 
 
