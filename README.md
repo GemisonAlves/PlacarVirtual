@@ -27,7 +27,7 @@ Se desejas utilizar o software do Placar Virtual e usa uma distribuição Window
 
 Com a Tela do monitoramento aberta você pode identificar a função "porta", que é a administração das entradas usb do seu computador, onde você deverá conectar o cabo da sua esp8266. Logo após selecionada a porta, em seguida é preciso a sua velocidade, 115200 padrão da placa. O usuário poderá analisar o status do Placar Virtual, se está conectado ou desconectado, conforme sua conexão. Com a conexão feita, você poderá acompanhar a partida do "pebolim" conforme os gols forem sendo efetuados, e com a função de encerar a partida, pelo botão "FINALIZAR".
 
-# Utilização do site do Placar Virtual
+# Utilização do Placar Virtual com o site
 
 #### Monitoramento da Partida
 
